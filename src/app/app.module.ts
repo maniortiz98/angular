@@ -3,14 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeruesComponent } from './herues/herue/herues.component';
+import { ListadoComponent } from './herues/listado/listado.component';
+import { ContaModule } from './contador/conta.module';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeruesComponent,
+    ListadoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ContaModule
   ],
   providers: [],
   bootstrap: [AppComponent]

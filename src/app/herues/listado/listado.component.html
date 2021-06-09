@@ -1,0 +1,22 @@
+<p>listado nombre</p>
+
+<ul>
+    <li *ngFor="let herue of herues">
+        {{herue}}
+    </li>
+</ul>
+<div *ngIf="herubor !== ''; else noBorrado">
+    <h3 >nombre borrado</h3>
+    <ul>
+        <li >
+            {{herubor}}
+        </li>
+    </ul>
+</div>
+
+<ng-template #noBorrado>
+    <h3>NO ha borrado nada</h3>
+</ng-template>
+
+
+<button (click)="borrarherue()">boarra</button>
