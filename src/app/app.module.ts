@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeruesComponent } from './herues/herue/herues.component';
 import { ListadoComponent } from './herues/listado/listado.component';
 import { ContaModule } from './contador/conta.module';
+import { DbzModule } from './dbz/dbz.module';
 
 
 @NgModule({
@@ -17,7 +18,10 @@ import { ContaModule } from './contador/conta.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ContaModule
+    ContaModule,
+    DbzModule
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
